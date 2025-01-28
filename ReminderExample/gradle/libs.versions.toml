@@ -16,6 +16,7 @@ androidxRoom = "2.6.1"
 hiltVersion = "2.47"
 roomCompiler = "2.6.1"
 roomKtx = "2.5.2"
+retrofitBom = "2.11.0"
 
 
 [libraries]
@@ -40,7 +41,9 @@ hilt-android = { group = "com.google.dagger", name = "hilt-android" , version.re
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler" , version.ref = "hiltVersion"}
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
-
+retrofit-bom = { group = "com.squareup.retrofit2", name = "retrofit-bom", version.ref = "retrofitBom" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit" }
+converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
