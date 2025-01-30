@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
     private const val BASE_URL =
-        "https://e9ec14e2-9ec7-4fbf-bdbf-7ecdd05a4cd7.mock.pstmn.io/"
+        "http://localhost:3000/"
     val api: ApiService by lazy {
         Retrofit
             .Builder()
